@@ -1,0 +1,34 @@
+@media (max-width:768px) {
+  .users-table{
+    &>:not(:first-child) {
+      border-top: inherit !important;
+    }
+    thead {
+      display: none;
+    }
+    td, td {
+      display: block;
+    }
+    tr {
+      position: relative;
+      td {
+        text-align: right;
+        &:before {
+          content: attr(data-label);
+          padding-left:10px;
+          left: 0;
+          position: absolute;
+        }
+      }
+    }
+
+  }
+
+}
+@media (min-width:769px) {
+  .users-table{
+    display: table;
+
+  }
+
+}
