@@ -14,24 +14,63 @@ const emailRegexp  ='(?:[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+/=?^_
         email: yup.string().matches(emailRegexp, "Invalid Email"),
         surname: yup.string().required(),
         phone: yup.number().required().typeError("Incorrect Phone Number")
-
-
     })
 
-    const { register, handleSubmit, watch,reset, formState: { errors } } = useForm({
+    const { form, register, handleSubmit, watch,setValue, reset, formState: { errors } } = useForm({
         resolver: yupResolver(schema)});
 
-    function AddUser(){
-        console.log("add user")
+    const [user, setUser] = useState(null)
 
-    }
+    useEffect(()=>{
+        if (props && props?.id && props.id) {
+            let users = props.users || []
+            let userData = users.find(u => u && props && u.hasOwnProperty('id') && props.hasOwnProperty('id') && u.id === props.id)
+           if (userData !== undefined) {
+               setUser(userData)
+               fields.forEach(field => {
+                   setValue(field.name, userData[field.name])
+               });
+           }
+        }
+    },[props])
+
+    useEffect(()=>{
+
+    },[props])
+
+
     const onSubmit = data => {
         let usersData = [...props.users]
-        console.log(data)
-        usersData.push(data)
-        window.localStorage.setItem("users", JSON.stringify(usersData))
-        props.setUsers(usersData)
-reset()
+        let id = new Date().getTime()
+        let originalUsers = props.originalusers
+
+        if (props.modaltype && props.modaltype === "addUser") {
+            usersData.push({...data, id})
+            originalUsers.push({...data, id})
+            window.localStorage.setItem("users", JSON.stringify(originalUsers))
+
+        } else {
+            let updatedAllUsers = originalUsers.map(u => {
+                if (u.id === props.id) {
+                    return {...data}
+                }
+                return u
+            })
+
+            let newUsers = usersData.map(u => {
+                if (u.id === props.id) {
+                    return {...data}
+                }
+                return u
+            })
+            usersData = [...newUsers]
+            originalUsers = [...updatedAllUsers]
+            window.localStorage.setItem("users", JSON.stringify(updatedAllUsers))
+        }
+        props.setoriginalusers(originalUsers)
+        props.setall(usersData)
+        reset()
+        setUser(null)
         props.onHide()
     };
 
@@ -40,6 +79,12 @@ reset()
             <Modal
                 {...props}
                 size="lg"
+                onHide={()=>{
+                    reset()
+                    props.resetid()
+                    props.setmodalshow(false)
+                    setUser(null)
+                }}
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
             >
@@ -51,14 +96,14 @@ reset()
                 <Modal.Body className={'user-modal-body'}>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         {fields.map((f,i) =>  {
-                            console.log("f==", f)
                             if (f.type === "fill") {
                                 return (
                                     <div key={i} className={'w-75 mt-2 d-block m-auto margin-auto d-flex flex-column  align-items-start'}>
                                         <label htmlFor={f.label} className={'pl-3 text-center'}>{f.label}</label>
-                                        <input {...register(f.name,
-                                            { required: true, maxLength: 20 }
-                                        )}
+                                        <input
+                                                 {...register(f.name,
+                                             { required: true, maxLength: 20 }
+                                                 )}
                                                name={f.name}
                                                type="text"
                                                id={f.label}
@@ -66,27 +111,20 @@ reset()
                                                <div className={'text-danger'}>
                                                    {errors[f.name]?.message}
                                                </div>
-
                                     </div>
                                 )
                             }
                         }
-
                         )}
-                        <div className={'text-center mt-3'}>
+                        <div className={'text-center mt-3 mb-3'}>
                             {props.modaltype === "addUser" ? (
                                 <Button  type={'submit'} >Add User</Button>
                             ) : (
                                 <Button  type={'submit'}>Save User</Button>
                             )}
                         </div>
-
                       </form>
                 </Modal.Body>
-                <Modal.Footer>
-
-
-                </Modal.Footer>
             </Modal>
         </>
     );

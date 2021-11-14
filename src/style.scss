@@ -15,6 +15,11 @@ body {
     monospace;
   }
 
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
   .btn-check:focus+.btn, .btn:focus{
     box-shadow: inherit !important;
   }

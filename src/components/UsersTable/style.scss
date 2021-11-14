@@ -1,4 +1,15 @@
+.search-mobile {
+  margin-top: 20px;
+  .heading {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
 @media (max-width:768px) {
+  .search-mobile {
+    display: block;
+  }
   .users-table{
     &>:not(:first-child) {
       border-top: inherit !important;
@@ -13,15 +24,19 @@
       position: relative;
       td {
         text-align: right;
+        padding-right: 25px;
         &:before {
           content: attr(data-label);
           padding-left:10px;
           left: 0;
           position: absolute;
         }
+        .actions {
+          justify-content: flex-end !important;
+
+        }
       }
     }
-
   }
 
 }
@@ -29,6 +44,9 @@
   .users-table{
     display: table;
 
+  }
+  .search-mobile {
+    display: none;
   }
 
 }
