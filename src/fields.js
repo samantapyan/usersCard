@@ -22,6 +22,12 @@ const fields = [
 
     },
     {
+        name: "address",
+        label:"Address",
+        type:"fill"
+
+    },
+    {
         name: "phone",
         label:"Phone",
         type:"fill"

@@ -91,6 +91,7 @@ function UsersTable() {
             <Button variant="primary" onClick={() =>  {
                 setModalType("addUser")
                 setModalShow(true)
+                setCurrentUserId('')
             }
             }>
                Add User
@@ -152,6 +153,7 @@ function UsersTable() {
                         <td data-label="Name">{user.name}</td>
                         <td data-label="Surname">{user.surname}</td>
                         <td data-label="Email">{user.email}</td>
+                        <td data-label="Email">{user.address}</td>
                         <td data-label="Phone">{user.phone}</td>
                         <td data-label="Action" >
                             <div className={'actions  d-flex justify-content-evenly'}>

@@ -7,13 +7,10 @@
       <change beforePath="$PROJECT_DIR$/../.env.production" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Modal/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/Modal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UsersTable/UsersTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UsersTable/UsersTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UsersTable/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UsersTable/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fields.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fields.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../babel.config.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
@@ -62,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="180">
               <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
@@ -74,17 +71,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/UsersTable/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
+            <state relative-caret-position="684">
               <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/UsersTable/UsersTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="805">
-              <caret line="156" column="83" lean-forward="true" selection-start-line="156" selection-start-column="83" selection-end-line="156" selection-end-column="83" />
+            <state relative-caret-position="328">
+              <caret line="101" column="28" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="28" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -95,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fields.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            <state relative-caret-position="350">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -111,11 +108,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Modal/Modal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-613">
-              <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+            <state relative-caret-position="967">
+              <caret line="72" column="11" lean-forward="true" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -136,12 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>modalType</find>
-      <find>modalShow</find>
-      <find>setCurrentUser</find>
-      <find>users</find>
-      <find>window.localStorage</find>
-      <find>deleteUser</find>
       <find>setusers</find>
       <find>props.se</find>
       <find>setUser</find>
@@ -166,6 +157,12 @@
       <find>console</find>
       <find>mobile</find>
       <find>window.localStorage.setItem</find>
+      <find>map</find>
+      <find>.map</find>
+      <find>save user</find>
+      <find>setCurrentUserId</find>
+      <find>props.reser</find>
+      <find>resetid</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,18 +176,19 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Modal/style.scss" />
-        <option value="$PROJECT_DIR$/src/fields.js" />
         <option value="$PROJECT_DIR$/src/setupTests.js" />
         <option value="$PROJECT_DIR$/src/style.scss" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/UsersTable/style.scss" />
+        <option value="$PROJECT_DIR$/src/fields.js" />
         <option value="$PROJECT_DIR$/src/components/UsersTable/UsersTable.js" />
         <option value="$PROJECT_DIR$/src/components/Modal/Modal.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-30" />
+    <option name="x" value="366" />
+    <option name="y" value="159" />
     <option name="width" value="1596" />
     <option name="height" value="867" />
   </component>
@@ -200,6 +198,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,7 +235,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,19 +280,20 @@
       <workItem from="1636827666432" duration="11332000" />
       <workItem from="1636839568050" duration="93000" />
       <workItem from="1636876039783" duration="148000" />
-      <workItem from="1636877922881" duration="15543000" />
+      <workItem from="1636877922881" duration="16232000" />
+      <workItem from="1636955012450" duration="1307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29104000" />
+    <option name="totallyTimeSpent" value="31100000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-30" y="0" width="1596" height="867" extended-state="0" />
+    <frame x="201" y="88" width="1596" height="867" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7655367" visible="true" weight="0.20898438" />
-      <window_info id="Structure" order="1" sideWeight="0.23446327" side_tool="true" visible="true" weight="0.20898438" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.87286824" visible="true" weight="0.21158855" />
+      <window_info id="Structure" order="1" sideWeight="0.12713179" side_tool="true" visible="true" weight="0.21158855" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -308,7 +307,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.08615819" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.08898305" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -389,23 +388,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/setupTests.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reportWebVitals.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fields.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -420,7 +406,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="180">
           <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
@@ -428,13 +414,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Modal/Modal.js">
+    <entry file="file://$PROJECT_DIR$/src/components/UsersTable/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-613">
-          <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="684">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reportWebVitals.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/setupTests.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fields.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
@@ -445,19 +441,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UsersTable/style.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/UsersTable/UsersTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="328">
+          <caret line="101" column="28" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UsersTable/UsersTable.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Modal/Modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="156" column="83" lean-forward="true" selection-start-line="156" selection-start-column="83" selection-end-line="156" selection-end-column="83" />
+        <state relative-caret-position="967">
+          <caret line="72" column="11" lean-forward="true" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>

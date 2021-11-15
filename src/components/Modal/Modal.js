@@ -13,16 +13,17 @@ const emailRegexp  ='(?:[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+/=?^_
         name: yup.string().required(),
         email: yup.string().matches(emailRegexp, "Invalid Email"),
         surname: yup.string().required(),
+        address: yup.string().required(),
         phone: yup.number().required().typeError("Incorrect Phone Number")
     })
 
-    const { form, register, handleSubmit, watch,setValue, reset, formState: { errors } } = useForm({
+    const { register,resetField, handleSubmit, setValue, reset, formState: { errors } } = useForm({
         resolver: yupResolver(schema)});
 
     const [user, setUser] = useState(null)
 
     useEffect(()=>{
-        if (props && props?.id && props.id) {
+        if (props && props?.id && props.id && props.modaltype ==="editUser") {
             let users = props.users || []
             let userData = users.find(u => u && props && u.hasOwnProperty('id') && props.hasOwnProperty('id') && u.id === props.id)
            if (userData !== undefined) {
@@ -31,11 +32,9 @@ const emailRegexp  ='(?:[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+/=?^_
                    setValue(field.name, userData[field.name])
                });
            }
+        } else {
+             reset()
         }
-    },[props])
-
-    useEffect(()=>{
-
     },[props])
 
 
@@ -69,7 +68,9 @@ const emailRegexp  ='(?:[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+/=?^_
         }
         props.setoriginalusers(originalUsers)
         props.setall(usersData)
-        reset()
+        fields.forEach(field => {
+            resetField(field.name)
+        });
         setUser(null)
         props.onHide()
     };
